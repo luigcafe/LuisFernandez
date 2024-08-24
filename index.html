@@ -1,64 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Inicial</title>
+    <style>
+        body {
+            background-color: #FFFFE0; /* Cor de fundo clara de amarelo */
+            margin: 0; /* Remove margens padrão */
+            height: 100vh; /* Altura total da viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            text-align: center; /* Centraliza o texto */
+        }
+        .container-wrapper {
+            display: flex;
+            flex: 1; /* Faz com que o container-wrapper ocupe o espaço restante */
+            gap: 10px; /* Espaço entre os containers */
+            padding: 10px; /* Espaço ao redor dos containers */
+        }
+        .container {
+            border: 5px solid #000; /* Borda grossa */
+            padding: 20px;
+            flex: 1; /* Faz com que os containers ocupem a mesma largura */
+            text-align: center; /* Centraliza o texto */
+            box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+            background-color: #FFD700; /* Cor de fundo mais escura para os containers */
+        }
+        .container a {
+            text-decoration: none; /* Remove a sublinha dos links */
+            color: inherit; /* Mantém a cor do texto */
+            display: block; /* Faz o link ocupar todo o espaço do container */
+            height: 100%; /* Faz o link ocupar toda a altura do container */
+        }
+        .container a h2 {
+            margin: 0; /* Remove margens padrão do título */
+        }
+    </style>
 </head>
 <body>
-    <h1>Links para rota 1</h1>
-    <a href="html/parágrafo.html">PERFEITO !!</a>
-    <br>
-    <br>
+    <h1>Portfólio pessoal</h1>
 
-    <a href="html/video_paragrafo.html">Quebra de linha</a>
-    <br>
-    <br>
-    <a href="html/imagem.html">Inserir Imagem</a>
-    <br>
-    <br>
-    <a href="html/plano_de_fundo.html">Plano de Fundo</a>
-    <br>
-    <br>
-<a href="html/plano_de_fundo_imagem.html">Plano de Fundo Imagem</a>
-<br>
-<br>
-<a href="html/Bordas_arredondadas.html">Bordas Arredondadas</a>
-<br>
-<br>
-<a href="html/cores.html">Cores</a>
-<br>
-<br>
-<a href="html/v_max_width.html">Diferença entre width e max-width</a>
-<br>
-<br>
-<a href="html/v_float.html">Float</a>
-<br>
-<br>
-<a href="html/v_clear.html">Float</a>
-<br>
-<br>
-<a href="html/closed1.html">closed</a>
-<br>
-<br>
-<a href="html/history.html">History</a>
-<br>
-<br>
-<a href="html/open.html">Open</a>
-<br>
-<br>
-<a href="html/v_open_close.html">Open-Close</a>
-<br>
-<br>
-<a href="html/v_onload.html">onload</a>
-<br>
-<br>
-<a href="html/v_addEventListenerA.html">addEventListenerA</a>
-<br>
-<br>
-<a href="html/v_addEventListenerB.html">addEventListenerB</a>
-<br>
-<br>
+    <div class="container-wrapper">
+        <a href="sobremim.html">
+            <div class="container">
+                <h2>Esse sou eu...</h2>
+            </div>
+        </a>
+
+        <a href="academico.html">
+            <div class="container">
+                <h2>Academicamente falando...</h2>
+            </div>
+        </a>
+
+        <a href="portfolio.html">
+            <div class="container">
+                <h2>Portfolio</h2>
+            </div>
+        </a>
+
+        <a href="contato.html">
+            <div class="container">
+                <h2>Algo a me comunicar?...</h2>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
