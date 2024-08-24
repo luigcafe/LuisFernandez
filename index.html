@@ -3,70 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Menu</title>
     <style>
         body {
-            background-color: #FFFFE0; /* Cor de fundo clara de amarelo */
-            margin: 0; /* Remove margens padrão */
-            height: 100vh; /* Altura total da viewport */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Fotos/Portfolio.jpg') no-repeat center center fixed; /* Adicionar imagem de fundo */
+            background-size: contain; /* Ajustar a imagem para caber no fundo */
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza horizontalmente */
-            justify-content: center; /* Centraliza verticalmente */
-            text-align: center; /* Centraliza o texto */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        .container-wrapper {
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
             display: flex;
-            flex: 1; /* Faz com que o container-wrapper ocupe o espaço restante */
-            gap: 10px; /* Espaço entre os containers */
-            padding: 10px; /* Espaço ao redor dos containers */
+            justify-content: center;
+            width: 100%;
+            position: fixed; /* Fixar o cabeçalho no topo */
+            top: 0; /* Posicionar no topo */
+            left: 0; /* Alinhar à esquerda */
+            z-index: 1000; /* Garantir que fique acima de outros elementos */
         }
-        .container {
-            border: 5px solid #000; /* Borda grossa */
-            padding: 20px;
-            flex: 1; /* Faz com que os containers ocupem a mesma largura */
-            text-align: center; /* Centraliza o texto */
-            box-sizing: border-box; /* Inclui padding e borda na largura e altura */
-            background-color: #FFD700; /* Cor de fundo mais escura para os containers */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
         }
-        .container a {
-            text-decoration: none; /* Remove a sublinha dos links */
-            color: inherit; /* Mantém a cor do texto */
-            display: block; /* Faz o link ocupar todo o espaço do container */
-            height: 100%; /* Faz o link ocupar toda a altura do container */
+        nav ul li {
+            margin: 0 1em;
         }
-        .container a h2 {
-            margin: 0; /* Remove margens padrão do título */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        h1 {
+            margin-top: 8em; /* Adicionar margem superior para mover o título para baixo */
+            text-align: center;
+            color: blue; /* Cor azul para o título */
         }
     </style>
 </head>
 <body>
-    <h1>Portfólio pessoal</h1>
+    <nav>
+        <ul>
+            <li><a href="sobremim.html">Esse sou eu</a></li>
+            <li><a href="academico.html">Academicamente falando</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contato.html">Segue meu contato</a></li>
+        </ul>
+    </nav>
 
-    <div class="container-wrapper">
-        <a href="sobremim.html">
-            <div class="container">
-                <h2>Esse sou eu...</h2>
-            </div>
-        </a>
-
-        <a href="academico.html">
-            <div class="container">
-                <h2>Academicamente falando...</h2>
-            </div>
-        </a>
-
-        <a href="portfolio.html">
-            <div class="container">
-                <h2>Portfolio</h2>
-            </div>
-        </a>
-
-        <a href="contato.html">
-            <div class="container">
-                <h2>Algo a me comunicar?...</h2>
-            </div>
-        </a>
-    </div>
+    <h1>Portfólio pessoal (CV online)</h1>
 </body>
 </html>
