@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 2em;
+            display: flex;
+            justify-content: space-between;
+        }
+        section {
+            flex: 1;
+        }
+        .profile-pic {
+            max-width: 600px; /* Aumentei ainda mais o tamanho da imagem */
+            margin-left: 20px;
+        }
+        .profile-pic + .profile-pic {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .project {
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobremim.html">Esse sou eu</a></li>
+            <li><a href="academico.html">Academicamente falando</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contato.html">Segue meu contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Projeto 1 - Novo WEB Site para Empresa Francesa</h3>
+                <p>Criar novas features para relatorios.</p>
+            </div>
+            <div class="project">
+                <h3>Projeto 2 - Lenovo China</h3>
+                <p>Desenvolver features para testes de Servidores de aplicação.</p>
+            </div>
+        </section>
+        <div>
+            <img src="Fotos/ProjetosTi.jpg" alt="Foto de Projetos Ti" class="profile-pic">
+            <img src="Fotos/ProjetosTi2.jpg" alt="Foto de Projetos Ti 2" class="profile-pic">
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
